@@ -1,0 +1,1 @@
+export const CARD_TITLE_DEFAULT = 'Character Details';
