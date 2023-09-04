@@ -4,6 +4,7 @@ import { Home } from "./components/Home/Home"
 import { About } from "./components/About/About"
 import { NotFound } from "./components/NotFound/NotFound"
 import  { HocExample } from "./components/HocExample/HocExample";
+import { RenderPropsExample } from "./components/RenderPropsExample/RenderPropsExample";
 
 const Results = React.lazy(() => import("./components/Results/Results"));
 
@@ -27,6 +28,7 @@ export const App = () => {
         <NavLink to="/" className={({ isActive }) => getClassLink(isActive)}>HOME</NavLink>
         <NavLink to="/results" className={({ isActive }) => getClassLink(isActive)}>RESULTS</NavLink>
         <NavLink to="/hoc" className={({ isActive }) => getClassLink(isActive)}>HOC</NavLink>
+        <NavLink to="/renderProps" className={({ isActive }) => getClassLink(isActive)}>RenderProps</NavLink>
         <NavLink to="/about" className={({ isActive }) => getClassLink(isActive)}>ABOUT</NavLink>
       </nav>
 
@@ -34,6 +36,7 @@ export const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/hoc" element={<HocExample />} />
+        <Route path="/renderProps" element={<RenderPropsExample />} />
         <Route path="/results" element={<React.Suspense fallback={<>...</>}><Results /></React.Suspense> } />
         <Route path="*" element={<NotFound />} />
       </Routes>
