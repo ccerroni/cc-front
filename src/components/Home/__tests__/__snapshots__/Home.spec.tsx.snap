@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test suites for Home should render the component correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="m-8"
+  >
+    <h1
+      class="text-3xl"
+    >
+      Home Page
+    </h1>
+  </div>
+</DocumentFragment>
+`;
