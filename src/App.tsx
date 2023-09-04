@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-do
 import { Home } from "./components/Home/Home"
 import { About } from "./components/About/About"
 import { NotFound } from "./components/NotFound/NotFound"
+import  { HocExample } from "./components/HocExample/HocExample";
 
 const Results = React.lazy(() => import("./components/Results/Results"));
 
@@ -24,13 +25,15 @@ export const App = () => {
       {/* TODO: move this to another comp */}
       <nav className="bg-indigo-500 p-4 text-white">
         <NavLink to="/" className={({ isActive }) => getClassLink(isActive)}>HOME</NavLink>
+        <NavLink to="/results" className={({ isActive }) => getClassLink(isActive)}>RESULTS</NavLink>
+        <NavLink to="/hoc" className={({ isActive }) => getClassLink(isActive)}>HOC</NavLink>
         <NavLink to="/about" className={({ isActive }) => getClassLink(isActive)}>ABOUT</NavLink>
-         <NavLink to="/results" className={({ isActive }) => getClassLink(isActive)}>RESULTS</NavLink>
       </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/hoc" element={<HocExample />} />
         <Route path="/results" element={<React.Suspense fallback={<>...</>}><Results /></React.Suspense> } />
         <Route path="*" element={<NotFound />} />
       </Routes>
