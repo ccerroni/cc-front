@@ -11,7 +11,7 @@
   *ts
   *tsx
 -errorBoundary
--(patter) hoc
+-*(patter) hoc
 -(patter) render props
 -(patter) compound component
 -(patter) Polymorphic components (chackra and material use it)
