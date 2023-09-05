@@ -1,0 +1,28 @@
+
+.navbar {
+  background-color: #9663A3;
+  letter-spacing: .2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 1rem;
+}
+
+.item {
+  color: #A5A5A5;
+  text-decoration: none;
+}
+
+.dropdown-toggle.nav-link:hover,
+.item:hover {
+  color: white;
+}
+
+.active {
+  text-decoration: none;
+  color: white;
+  text-shadow:0px 0px 15px black;
+}
+
+.dropdown-toggle.nav-link {
+  color: #A5A5A5;
+}
+

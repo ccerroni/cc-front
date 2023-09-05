@@ -1,3 +1,4 @@
+import Row from "react-bootstrap/esm/Row";
 
 export interface ComponentAProps {
   text: string;
@@ -6,9 +7,9 @@ export interface ComponentAProps {
 
 export const ComponentA: React.FC<ComponentAProps> = ({text, quantity}) => {
   return (
-    <div className="m-8">
+    <Row>
       <p>Text: {text}</p>
       <p>Quantity: {quantity}</p>
-    </div>
+    </Row>
   )
 };
