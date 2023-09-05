@@ -1,0 +1,10 @@
+.list-item {
+  color: #7D757F; 
+  padding: 0 8px;
+  border-radius: 4px;
+ }
+
+.list-item:hover {
+ background-color: #9663A3; 
+ color: white;
+}
