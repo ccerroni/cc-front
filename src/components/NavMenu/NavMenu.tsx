@@ -5,8 +5,8 @@ import { MenuItem } from "../../models/MenuItem";
 import Nav from "react-bootstrap/esm/Nav";
 import NavDropdown from "react-bootstrap/esm/NavDropdown";
 import Navbar from "react-bootstrap/esm/Navbar";
-import { Container } from "react-bootstrap";
 import "./NavMenu.css";
+import Container from "react-bootstrap/esm/Container";
 
 export const NavMenu: React.FC = () => {
   const getDropdownMenu = (itemWithChildren: MenuItem) => (
@@ -37,7 +37,6 @@ export const NavMenu: React.FC = () => {
   };
 
   return (
-
     <Navbar className="navbar">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
