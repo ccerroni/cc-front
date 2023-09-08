@@ -4,7 +4,7 @@
   *fetch 
   axios
   swr
--contextApi
+-*contextApi
 -useReducer
 -memoization
 -*(patter) custom hooks
