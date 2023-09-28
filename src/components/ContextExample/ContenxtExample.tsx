@@ -1,5 +1,5 @@
-import { ExampleContextProvider } from "../../context/exampleContext"
 import { FirstChild } from "./FirstChild/FirstChild"
+import { ExampleContextProvider } from "../../context/exampleContext"
 
 export const ContextExample: React.FC = () => {
   return(

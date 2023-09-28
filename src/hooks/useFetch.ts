@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { publicRuntimeConfig } from "../config/local"
-import { FetchResponse, RickAndMortyResponse } from "../models/ApiData";
+import { FetchResponse, RickAndMortyResponse } from "../models/RickAndMortyApiData";
 
 
 export const useFetch  = (): FetchResponse => {
@@ -37,7 +37,6 @@ export const useFetch  = (): FetchResponse => {
     isLoading,
     error
   }
-
 }
 
 

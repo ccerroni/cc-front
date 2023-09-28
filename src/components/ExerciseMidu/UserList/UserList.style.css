@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.painted tbody > tr:nth-child(2n) {
+  background-color: #b9b6b6;
+}
+.painted tbody > tr:nth-child(2n + 1) {
+  background-color: #f4f4f4;
+}
