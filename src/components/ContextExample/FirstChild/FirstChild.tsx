@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/esm/Button";
-import { useExampleContextWithHook } from "../../../context/exampleContext"
 import { SecondChild } from "../SecondChild/SecondChild"
+import { useExampleContextWithHook } from "../../../context/exampleContext";
 
 export const FirstChild: React.FC = () => {
   const { valueInContext, setValueInContext } = useExampleContextWithHook();

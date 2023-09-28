@@ -28,7 +28,7 @@ export const NavMenu: React.FC = () => {
 
   const getMenuItem = (item: MenuItem) => {
     return !item.children ? (
-      <Nav.Item>
+      <Nav.Item key={item.name}>
         <Nav.Link>
           <NavLink to={item.url} className={({ isActive }) => getClassLink(isActive)}>{item.name}</NavLink>
         </Nav.Link>
